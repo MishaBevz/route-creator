@@ -1,0 +1,111 @@
+.route-builder {
+    display: flex;
+}
+.route-builder__menu {
+    margin-right: 20px;
+}
+.route-builder__form {
+    margin-bottom: 10px;
+}
+.route-builder__form input {
+    border: 1px solid black;
+}
+.route-builder__form input, .route-builder__form button {
+    font-size: 15px;
+    padding: 5px;
+}
+.route-builder__form button {
+    margin-left: 5px;
+    border: 1px solid orange;
+    cursor: pointer;
+    color: orange;
+    background: none;
+
+}
+.route-builder__form button:hover {
+    background: orange;
+    color: black;
+}
+
+.yandex-map {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    
+}
+.yandex-map__center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 9999;
+    animation: pulse 1.3s ease infinite;
+
+}
+.top {
+    position: absolute;
+    height: 7px;
+    border: 1px solid orange;
+    top: -14px;
+    right: -2px;
+}
+.bottom {
+    position: absolute;
+    height: 7px;
+    border: 1px solid orange;
+    top: 0px;
+    right: -2px;
+}
+.right {
+    position: absolute;
+    width: 7px;
+    border: 1px solid orange;
+    top: -3px;
+    right: -12px;
+}
+.left {
+    position: absolute;
+    width: 7px;
+    border: 1px solid orange;
+    top: -3px;
+    right: 2px;
+}
+.yandex-map__text-center {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    background: oldlace;
+}
+
+@media screen and (max-width: 1024px) {
+    .yandex-map {
+        width: 400px;
+        height: 400px;  
+    }
+    .yandex-map__text-center {
+        font-size: 14px;
+    }
+      
+}
+@media screen and (max-width: 720px) {
+    .route-builder {
+        flex-direction: column;
+    }
+    .route-builder__menu {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .route-builder__form input {
+        font-size: 12px;
+        width: 221px;
+    }
+    .route-builder__form button {
+        font-size: 12px;
+    }
+    .yandex-map {
+        width: 320px;
+        height: 320px;  
+    }   
+    .yandex-map__text-center {
+        font-size: 11px;
+    }  
+}

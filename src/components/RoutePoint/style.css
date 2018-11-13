@@ -1,0 +1,27 @@
+.route {
+    color: black;
+    cursor: move;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    animation: newElemShake 0.1s  ease-in;
+}
+.route button {
+    cursor: pointer;
+    padding: 2px 5px 2px 5px;
+    background: none;
+    border: 1px solid orange;
+    cursor: pointer;
+    color: orange;
+}
+.route button:hover {
+    background: orange;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+
