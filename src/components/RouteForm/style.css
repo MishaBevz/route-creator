@@ -94,10 +94,16 @@
         margin-bottom: 10px;
         margin-right: 0px;
     }
+    .route-builder__form {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .route-builder__form input {
         font-size: 12px;
-        width: 221px;
+        width: 235px;
     }
+
     .route-builder__form button {
         font-size: 12px;
     }
@@ -108,4 +114,15 @@
     .yandex-map__text-center {
         font-size: 11px;
     }  
+}
+
+@media screen and (max-width: 360px) { 
+    .route-builder__form input {
+        width: 215px;
+    }
+    .yandex-map {
+        width: 300px;
+        height: 300px;  
+    }   
+ 
 }
